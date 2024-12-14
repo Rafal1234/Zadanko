@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Zadanko.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="Zadanko.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Zadanko" Width="400" Height="250">
+
+  <Design.DataContext>
+    <!-- Remove this design-time DataContext since we're using DI -->
+    <!-- <vm:MainWindowViewModel/> -->
+  </Design.DataContext>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="150"/>
+      <ColumnDefinition Width="150"/>
+      <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+    <TextBlock Text="{Binding Greeting}" Grid.Row="0" Grid.Column="0"/>
+    <TextBox Text="{Binding FirstNumberInput, Mode=TwoWay}" 
+             MaxLength="5" 
+             Grid.Row="1" 
+             Grid.Column="0"
+             x:Name="FirstNumberTextBox"
+             KeyDown="NumbersOnly_KeyDown"
+             TextInput="NumbersOnly_TextInput"
+             AcceptsReturn="False"
+             AcceptsTab="False"/>
+    <TextBox Text="{Binding SecondNumberInput, Mode=TwoWay}" 
+             MaxLength="5" 
+             Grid.Row="1" 
+             Grid.Column="1"
+             x:Name="SecondNumberTextBox"
+             KeyDown="NumbersOnly_KeyDown"
+             TextInput="NumbersOnly_TextInput"
+             AcceptsReturn="False"
+             AcceptsTab="False"/>
+    <Button Command="{Binding AddNumbersCommand}" 
+            Content="Add" 
+            Grid.Row="1" 
+            Grid.Column="2" 
+            Margin="3"/>
+    <Label Content="Wynik: " 
+           Grid.Row="2" 
+           Grid.Column="0" 
+           HorizontalAlignment="Right"/>
+    <Label Content="{Binding Result}" 
+           Grid.Row="2" 
+           Grid.Column="1" 
+           HorizontalAlignment="Right"/>
+  </Grid>
+</Window>

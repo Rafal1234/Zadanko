@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanko", "Zadanko\Zadanko.csproj", "{0D09544B-CF13-424F-948D-998D36DFC755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{6FACC38F-AD9B-45BC-8F01-D464EA177555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZadankoTests", "ZadankoTests\ZadankoTests.csproj", "{8223B1E4-1C28-49C0-B4C0-293B6FAD278B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D09544B-CF13-424F-948D-998D36DFC755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D09544B-CF13-424F-948D-998D36DFC755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D09544B-CF13-424F-948D-998D36DFC755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D09544B-CF13-424F-948D-998D36DFC755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FACC38F-AD9B-45BC-8F01-D464EA177555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FACC38F-AD9B-45BC-8F01-D464EA177555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FACC38F-AD9B-45BC-8F01-D464EA177555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FACC38F-AD9B-45BC-8F01-D464EA177555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8223B1E4-1C28-49C0-B4C0-293B6FAD278B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8223B1E4-1C28-49C0-B4C0-293B6FAD278B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8223B1E4-1C28-49C0-B4C0-293B6FAD278B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8223B1E4-1C28-49C0-B4C0-293B6FAD278B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
